@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FitAnywhere — Gym & Home Programs</title>
+  <meta name="description" content="FitAnywhere: structured gym and home workout programs with video guidance, nutrition, and progress tracking." />
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="js/scripts.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="assets.svg" alt="FitAnywhere logo" />
+        <span>FitAnywhere</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="shop.html" class="btn btn-ghost">Shop</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open navigation" onclick="toggleMobileNav()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Build strength anywhere — gym or home.</h1>
+          <p class="lead">Structured 4-week programs with progressive workouts, video demos, and easy meal guidance. Choose Gym Edition or Home Edition.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="programs.html#gym">Gym Programs</a>
+            <a class="btn btn-outline" href="programs.html#home">Home Editions</a>
+          </div>
+
+          <ul class="feature-list">
+            <li>Video-guided exercises</li>
+            <li>Beginner → Advanced progressions</li>
+            <li>Printable PDFs & 1:1 coaching option</li>
+          </ul>
+
+          <div class="email-capture">
+            <label for="lead-email">Get a free 7-Day Home Plan</label>
+            <div class="lead-form">
+              <input id="lead-email" type="email" placeholder="you@email.com" />
+              <button onclick="subscribeLead()" class="btn">Get free plan</button>
+            </div>
+            <small class="muted">No spam. Unsubscribe anytime.</small>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- use an image or an embedded video -->
+          <div class="media-card">
+            <img src="assets/hero.jpg" alt="Trainer demonstrating workout" />
+            <div class="media-overlay">
+              <p><strong>4-week Home Edition</strong> • 20–30 min/day</p>
+              <a class="btn btn-small" href="programs.html#home">View Home Plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM HIGHLIGHTS -->
+    <section class="container cards-section">
+      <h2>Featured Programs</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Gym Strength — 4 Week</h3>
+          <p>4 days/week strength split focused on hypertrophy + compound strength.</p>
+          <ul>
+            <li>Progressive overload plan</li>
+            <li>Exercise videos</li>
+            <li>Weekly tracking sheet</li>
+          </ul>
+          <div class="card-actions">
+            <a href="programs.html#gym" class="btn">See details</a>
+            <a href="#" class="btn btn-ghost" onclick="openCheckout('gym-4wk')">Buy ₤29</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Home Edition — Bodyweight</h3>
+          <p>20–30 minute bodyweight circuits, perfect for busy schedules and small spaces.</p>
+          <ul>
+            <li>No equipment required</li>
+            <li>Video follow-along</li>
+            <li>Scaling options</li>
+          </ul>
+          <div class="card-actions">
+            <a href="programs.html#home" class="btn">See details</a>
+            <a href="#" class="btn btn-ghost" onclick="openCheckout('home-4wk')">Buy ₤19</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Coaching — 1:1</h3>
+          <p>Personalized coaching, nutrition checks, and weekly video calls.</p>
+          <div class="card-actions">
+            <a href="contact.html" class="btn">Apply</a>
+            <a href="shop.html" class="btn btn-ghost">Pricing</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF + TRANSFORM -->
+    <section class="testimonials container">
+      <h2>Client Transformations</h2>
+      <div class="test-grid">
+        <figure class="test">
+          <img src="assets/hero.jpg" alt="before and after" />
+          <figcaption><strong>Alex</strong> — lost 8kg and added strength in 12 weeks.</figcaption>
+        </figure>
+        <figure class="test">
+          <img src="assets/hero.jpg" alt="before and after" />
+          <figcaption><strong>Maria</strong> — regained fitness with home workouts.</figcaption>
+        </figure>
+        <figure class="test">
+          <img src="assets/hero.jpg" alt="before and after" />
+          <figcaption><strong>Sam</strong> — gained confidence & mobility.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- IG / TIKTOK SAMPLES -->
+    <section class="social-feed container">
+      <h2>Instagram / TikTok Content Examples</h2>
+      <div class="social-grid">
+        <article class="social-card">
+          <div class="media-thumb">📹</div>
+          <h4>Reel: 5-min Glute Blaster (Home)</h4>
+          <p>Hook: "No gym? No problem." 3 exercises, 4 rounds. CTA: Save + Follow.</p>
+        </article>
+
+        <article class="social-card">
+          <div class="media-thumb">📷</div>
+          <h4>Carousel: 5 Mistakes Killing Your Home Workouts</h4>
+          <p>Swipeable tips with corrective images & CTA to download the free plan.</p>
+        </article>
+
+        <article class="social-card">
+          <div class="media-thumb">🎙</div>
+          <h4>TikTok: 15s myth-buster</h4>
+          <p>Fast hook, trending sound, close with challenge to duet.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>FitAnywhere</h3>
+        <p>Simple, effective training for people who want results — wherever they train.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="programs.html">Programs</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="legal">
+        <p>© <span id="year"></span> FitAnywhere • All rights reserved</p>
+        <p><a href="#">Privacy</a> • <a href="#">Terms</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lead magnet modal (hidden by default) -->
+  <div id="leadModal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" onclick="closeLeadModal()">✕</button>
+      <h3>Get the Free 7-Day Home Plan</h3>
+      <p>Enter your email and we'll send the PDF + 3 follow-up lessons.</p>
+      <input id="modal-email" type="email" placeholder="Your email" />
+      <div style="margin-top:12px;">
+        <button class="btn" onclick="subscribeFromModal()">Send me the plan</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

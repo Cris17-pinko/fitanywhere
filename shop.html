@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — FitAnywhere</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="js/scripts.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="assets.svg" alt="logo"><span>FitAnywhere</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="shop.html" aria-current="page">Shop</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Shop</h1>
+    <p>Digital programs and coaching packages. Connect your payment provider (Stripe recommended) to enable checkout.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Gym 4-Week Program</h3>
+        <p>PDF + 12 videos</p>
+        <a class="btn" onclick="openCheckout('gym-4wk')">Buy ₤29</a>
+      </div>
+      <div class="card">
+        <h3>Home 4-Week Program</h3>
+        <p>PDF + follow-along videos</p>
+        <a class="btn" onclick="openCheckout('home-4wk')">Buy ₤19</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year5"></span> FitAnywhere</p>
+    </div>
+  </footer>
+</body>
+</html>

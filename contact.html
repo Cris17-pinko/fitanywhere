@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — FitAnywhere</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="assets.svg" alt="logo"><span>FitAnywhere</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact</h1>
+    <p>Interested in coaching or have a question? Fill the form below or email <a href="mailto:p.cris.aesthetics@gmail.com">p.coach.cristina</a>.</p>
+    <form action="https://formspree.io/f/xanrdkla"
+          method="POST"
+     >
+       <label>
+          Your name:
+          <input type="name" name="name">
+        </label>
+        <label>
+          Your email:
+          <input type="email" name="email">
+        </label>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year6"></span> FitAnywhere</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

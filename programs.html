@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Programs — FitAnywhere</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="js/scripts.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="assets.svg" alt="logo"><span>FitAnywhere</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="programs.html" aria-current="page">Programs</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+      <button class="nav-toggle" onclick="toggleMobileNav()">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="gym" class="program-section">
+      <h1>Gym Edition — 4-Week Strength</h1>
+      <p class="lead">Designed for the gym-goer who wants measurable strength and lean muscle. 4 days/week with progressive overload.</p>
+
+      <div class="program-grid">
+        <div class="program-media">
+          <video controls poster="assets/hero.jpg" src="assets/placeholder-video.mp4">
+            Your browser does not support video.
+          </video>
+        </div>
+        <div class="program-details">
+          <h3>What's included</h3>
+          <ul>
+            <li>Printable weekly schedules</li>
+            <li>Exercise library with form cues</li>
+            <li>Progression plan + load calculator</li>
+            <li>Optional coaching add-on</li>
+          </ul>
+
+          <h4>Sample Upper Body Day</h4>
+          <ol>
+            <li>Bench press — 4x8</li>
+            <li>Lat pulldown — 4x10</li>
+            <li>Dumbbell shoulder press — 3x10</li>
+            <li>Cable row — 3x12</li>
+            <li>Core finisher — Plank 3x45s</li>
+          </ol>
+
+          <div class="card-actions">
+            <a href="#" class="btn" onclick="openCheckout('gym-4wk')">Buy now — ₤29</a>
+            <a href="#" class="btn btn-outline" onclick="downloadPDF('gym-sample.pdf')">Download sample PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="home" class="program-section">
+      <h1>Home Edition — Bodyweight / Minimal Equipment</h1>
+      <p class="lead">Short, intense sessions for busy people — no gym necessary.</p>
+      <div class="program-grid reverse">
+        <div class="program-media">
+          <img src="assets/hero.jpg" alt="home edition demo" />
+        </div>
+        <div class="program-details">
+          <h3>What's included</h3>
+          <ul>
+            <li>20–30 minute follow-along videos</li>
+            <li>Beginner/intermediate/advanced options</li>
+            <li>Minimal equipment versions</li>
+            <li>Weekly habit & nutrition tips</li>
+          </ul>
+
+          <h4>Sample Home Workout — 25 minutes</h4>
+          <ul>
+            <li>Warm-up — 3 minutes</li>
+            <li>Circuit x3: Squat to calf raise (45s), Push-ups (45s), Hip thrust (45s), Mountain climbers (45s)</li>
+            <li>Finisher — Burpees (30s) + Plank (60s)</li>
+          </ul>
+
+          <div class="card-actions">
+            <a href="#" class="btn" onclick="openCheckout('home-4wk')">Buy now — ₤19</a>
+            <a href="#" class="btn btn-outline" onclick="downloadPDF('home-sample.pdf')">Download sample PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> FitAnywhere • Built with care.</p>
+    </div>
+  </footer>
+</body>
+</html>
